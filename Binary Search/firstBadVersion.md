@@ -9,7 +9,7 @@ You are given an API bool isBadVersion(version) which will return whether versio
 URL: https://leetcode.com/problems/first-bad-version/
 
 #### Strategy
-This problem can be solved by binary search with a very small modification. We know that every version after the first bad version will be bad as well. When we query the API with pivot and it returns false, then we know that bad version is in the left sub array. If the API returns true, then we test the the pivot - 1 element. If pivot - 1 returns false, then we know pivot is the left most 'bad' version. If pivot - 1 returns true, then we can set pviot - 1 as the right bound and iterate the algorithm again.
+This problem can be solved by binary search with a very small modification. We know that every version after the first bad version will be bad as well. When we query the API with pivot and it returns false, then we know that bad version is in the left sub array. If the API returns true, then we test the the pivot - 1 element. If pivot - 1 returns false, then we know pivot is the left most 'bad' version. If pivot - 1 returns true, then we can set pivot - 1 as the right bound and iterate the algorithm again.
 
 Tip: use ***mid = left + ( right - left ) / 2*** instead of ***mid = ( left + right ) / 2*** to avoid integer overflow. (Happens when ***N*** is very large)
 
