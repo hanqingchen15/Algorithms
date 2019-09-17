@@ -13,9 +13,13 @@ class Solution(object):
         right = n
         while left <= right:
             mid = int(left + (right - left) / 2)
-            if guess(mid) == 0:
+            if self.guess(mid) == 0:
                 return mid
-            elif guess(mid) == 1:
+            elif self.guess(mid) == 1:
                 left = mid + 1
             else:
                 right = mid - 1
+
+    def guess(self, n):
+        #guess API placeholder
+        return 'something'
