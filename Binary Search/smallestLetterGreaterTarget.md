@@ -16,4 +16,4 @@ Algorithm is a binary search with comparison function. If target is greater than
 #### Time Complexity
 Since it's a modified binary search, time complexity is ***O(logN)***
 
-![img](./assets/smallestLetterGreaterTarget.png "Logo Title Text 1")
+![img](https://raw.githubusercontent.com/hanqingchen15/Algorithms/master/assets/smallestLetterGreaterTarget.png "Logo Title Text 1")
