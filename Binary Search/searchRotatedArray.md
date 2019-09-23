@@ -7,7 +7,7 @@ You are given a target value to search. If found in the array return its index, 
 URL: https://leetcode.com/problems/search-in-rotated-sorted-array/
 
 #### Strategy
-In each iteration, we set the average of left bound and right bound as our search index. We then compare the search index element to the left element. We then compare the left element to the search index element, to discover which side contains the rotated portion of the array. If left side is unrotated and target is between left element and search index element, we repeat the algorithm setting the right bound as search index - 1. If If target is not in range, we repeat using search index + 1 as left bound. If right side is unrotated and target is in range, we repeat using search index + 1 as left bound. If target is not in range, we repeat using search index - 1 as the right bound. 
+In each iteration, we set the average of left bound and right bound as our search index. We then compare the left element to the search index element, to discover which side contains the rotated portion of the array. If left side is unrotated and target is between left element and search index element, we repeat the algorithm setting the right bound as search index - 1. If target is not in range, we repeat using search index + 1 as left bound. If right side is unrotated and target is in range, we repeat using search index + 1 as left bound. If target is not in range, we repeat using search index - 1 as the right bound. 
 
 #### Time Complexity
 This is a modified binary search, so time complexity is ***O(logN)***
